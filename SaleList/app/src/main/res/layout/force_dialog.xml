@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/buttonCloseForceDialog"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:tint="@color/white"
+        app:backgroundTint="@color/red"
+        app:borderWidth="12dp"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardForceDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:cardBackgroundColor="@color/translucent_bg"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:background="@color/main_dark_bg">
+
+                <com.cengalabs.flatui.views.FlatTextView
+                    android:id="@+id/forceDialogTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:text="@string/Login"
+                    android:textSize="30sp"
+                    app:fl_textColor="fl_main" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <com.cengalabs.flatui.views.FlatTextView
+                    android:id="@+id/forceDialogMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/Login"
+                    android:textSize="20sp"
+                    app:fl_textColor="fl_main" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <com.cengalabs.flatui.views.FlatButton
+                        android:id="@+id/buttonToReturn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:text="คืนงาน\nไม่จำสถานะงานที่ได้รับ"
+                        android:textSize="25sp"
+                        app:fl_blockButtonEffectHeight="3dp"
+                        app:fl_textAppearance="fl_light" />
+
+                    <com.cengalabs.flatui.views.FlatButton
+                        android:id="@+id/buttonToPickup"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:text="ข้ามไปยังการรอรับผู้โดยสาร"
+                        android:textSize="25sp"
+                        app:fl_blockButtonEffectHeight="3dp"
+                        app:fl_textAppearance="fl_light" />
+
+                    <com.cengalabs.flatui.views.FlatButton
+                        android:id="@+id/buttonToPutPassenger"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:text="ข้ามไปยังผู้โดยสารลงรถ"
+                        android:textSize="25sp"
+                        app:fl_blockButtonEffectHeight="3dp"
+                        app:fl_textAppearance="fl_light" />
+
+                    <com.cengalabs.flatui.views.FlatButton
+                        android:id="@+id/buttonToEnd"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:text="ข้ามไปยังถึงศูนย์"
+                        android:textSize="25sp"
+                        app:fl_blockButtonEffectHeight="3dp"
+                        app:fl_textAppearance="fl_light" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

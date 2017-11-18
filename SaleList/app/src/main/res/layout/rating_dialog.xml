@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/buttonCloseRatingDialog"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:tint="@color/white"
+        app:backgroundTint="@color/red"
+        app:borderWidth="12dp"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardRatingDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:cardBackgroundColor="@color/translucent_bg"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:background="@color/main_dark_bg">
+
+                <com.cengalabs.flatui.views.FlatTextView
+                    android:id="@+id/ratingDialogTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:text="@string/Login"
+                    android:textSize="40sp"
+                    app:fl_textColor="fl_main" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@color/main_bg"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonVeryPoor"
+                    android:layout_width="113dp"
+                    android:layout_height="149dp"
+                    android:background="@drawable/emo1"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/buttonPoor"
+                    android:layout_width="113dp"
+                    android:layout_height="149dp"
+                    android:background="@drawable/emo2"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/buttonFair"
+                    android:layout_width="113dp"
+                    android:layout_height="149dp"
+                    android:background="@drawable/emo3"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/buttonGood"
+                    android:layout_width="113dp"
+                    android:layout_height="149dp"
+                    android:background="@drawable/emo4"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/buttonExcellent"
+                    android:layout_width="113dp"
+                    android:layout_height="149dp"
+                    android:background="@drawable/emo5"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

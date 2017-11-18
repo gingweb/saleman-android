@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="715dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/conclude_job_dialog"
+        android:layout_width="715dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:cardBackgroundColor="@color/translucent_bg"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="700dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:background="@color/colorPrimary">
+
+                    <com.cengalabs.flatui.views.FlatTextView
+                        android:id="@+id/textViewJobIDConclude"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:textSize="25sp"
+                        app:fl_textColor="fl_main"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="400dp"
+                    android:layout_height="100dp"
+                    android:background="@color/main_bg">
+
+                    <com.cengalabs.flatui.views.FlatTextView
+                        android:id="@+id/textViewJobConclude"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:text="@string/conclude"
+                        android:textSize="25sp"
+                        app:fl_textColor="fl_main"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="700dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="380dp"
+                    android:background="@color/main_bg"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageViewProfileConclude"
+                        android:layout_width="90dp"
+                        android:layout_height="110dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="20dp" />
+
+                    <com.cengalabs.flatui.views.FlatTextView
+                        android:id="@+id/textViewNameConclude"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="10dp"
+                        android:textSize="20sp"
+                        app:fl_textColor="fl_main"/>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_conclude_car"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        app:cardBackgroundColor="@color/translucent_bg"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/dark_main_bg"
+                            android:orientation="vertical"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp">
+
+                            <com.cengalabs.flatui.views.FlatTextView
+                                android:id="@+id/textViewLicenceConclude"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:textSize="20sp"
+                                app:fl_textColor="fl_main"/>
+
+                            <ImageView
+                                android:id="@+id/imageViewDotConcludeCar"
+                                android:layout_width="180dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/line_plate3" />
+
+                            <com.cengalabs.flatui.views.FlatTextView
+                                android:id="@+id/textViewBrandConclude"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                                app:fl_textColor="fl_main"/>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="400dp"
+                    android:layout_height="380dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imageViewOriginConclude"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_margin="10dp"
+                                    app:srcCompat="@drawable/origin" />
+
+                                <ScrollView
+                                    android:layout_width="350dp"
+                                    android:layout_height="50dp"
+                                    android:padding="10dp">
+                                    <com.cengalabs.flatui.views.FlatTextView
+                                        android:id="@+id/textViewOriginPlaceConclude"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:textSize="20sp"
+                                        app:fl_textColor="fl_main"/>
+                                </ScrollView>
+
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.9"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imageViewDotConclude"
+                                    android:layout_width="20dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginEnd="15dp"
+                                    app:srcCompat="@drawable/dot_maininfo" />
+
+                                <ScrollView
+                                    android:layout_width="350dp"
+                                    android:layout_height="50dp"
+                                    android:padding="10dp">
+                                    <com.cengalabs.flatui.views.FlatTextView
+                                        android:id="@+id/textViewDropOffPlaceConclude"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:textSize="25sp"
+                                        app:fl_textColor="fl_main"/>
+                                </ScrollView>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.9"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:id="@+id/imageViewDestinationPlaceConclude"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_margin="10dp"
+                                    app:srcCompat="@drawable/destination" />
+
+                                <ScrollView
+                                    android:layout_width="350dp"
+                                    android:layout_height="50dp"
+                                    android:padding="10dp">
+                                    <com.cengalabs.flatui.views.FlatTextView
+                                        android:id="@+id/textViewDestinationPlaceConclude"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:textSize="20sp"
+                                        app:fl_textColor="fl_main"/>
+                                </ScrollView>
+
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </ScrollView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <com.cengalabs.flatui.views.FlatTextView
+                            android:id="@+id/textViewTimeConclude"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="10dp"
+                            android:textSize="20sp"
+                            app:fl_textColor="fl_main"/>
+
+                        <com.cengalabs.flatui.views.FlatTextView
+                            android:id="@+id/textViewTimeCounterConclude"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="10dp"
+                            android:gravity="end"
+                            android:maxLines="1"
+                            android:textSize="20sp"
+                            app:fl_textColor="fl_main" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <com.cengalabs.flatui.views.FlatTextView
+                            android:id="@+id/textViewStartTimeCounterConclude"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="10dp"
+                            android:maxLines="1"
+                            android:text="@string/time_start"
+                            android:textSize="20sp"
+                            app:fl_textColor="fl_main"/>
+
+                        <com.cengalabs.flatui.views.FlatTextView
+                            android:id="@+id/textViewStartTimeCounterCounterConclude"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="10dp"
+                            android:gravity="end"
+                            android:maxLines="1"
+                            android:textSize="20sp"
+                            app:fl_textColor="fl_main"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <com.cengalabs.flatui.views.FlatTextView
+                            android:id="@+id/textViewLengthConclude"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="10dp"
+                            android:maxLines="1"
+                            android:text="@string/lengthByDrive"
+                            android:textSize="20sp"
+                            app:fl_textColor="fl_main"/>
+
+                        <com.cengalabs.flatui.views.FlatTextView
+                            android:id="@+id/textViewLengthCounterConclude"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="10dp"
+                            android:gravity="end"
+                            android:maxLines="1"
+                            android:textSize="20sp"
+                            app:fl_textColor="fl_main"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.9"
+                        android:orientation="horizontal">
+
+                        <com.cengalabs.flatui.views.FlatButton
+                            android:id="@+id/buttonConcludeOk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="20dp"
+                            android:text="@string/OK"
+                            android:layout_weight="1"
+                            android:textSize="20sp"
+                            android:layout_margin="10dp"
+                            app:fl_blockButtonEffectHeight="3dp"
+                            app:fl_textAppearance="fl_light" />
+
+                        <com.cengalabs.flatui.views.FlatButton
+                            android:id="@+id/buttonConcludeCancel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:gravity="center"
+                            android:layout_marginStart="20dp"
+                            android:text="@string/Cancel"
+                            android:layout_weight="1"
+                            android:textSize="20sp"
+                            android:layout_margin="10dp"
+                            app:fl_blockButtonEffectHeight="3dp"
+                            app:fl_textAppearance="fl_dark" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

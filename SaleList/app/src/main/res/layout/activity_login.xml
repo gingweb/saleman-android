@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.akkaratanapat.altear.vrp_onboard.Activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/zest_limo_logo" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageView"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/translucent_bg"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.cengalabs.flatui.views.FlatTextView
+                    android:id="@+id/text_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text= "@string/Login"
+                    android:textSize="20sp"
+                    app:fl_textColor="fl_main" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.cengalabs.flatui.views.FlatEditText
+                        android:id="@+id/editText_dispatch"
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:hint="รหัสพนักงานจัดรถ"
+                        android:includeFontPadding="true"
+                        android:maxLines="1"
+                        android:textSize="20sp"
+                        app:fl_fieldStyle="fl_box" />
+
+                    <com.cengalabs.flatui.views.FlatButton
+                        android:id="@+id/button_dispatch"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="1"
+                        android:text=">>"
+                        android:textSize="25sp"
+                        app:fl_blockButtonEffectHeight="3dp"
+                        app:fl_textAppearance="fl_light" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.cengalabs.flatui.views.FlatEditText
+                        android:id="@+id/editText_driver"
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:hint="รหัสพนักงานขับรถ"
+                        android:includeFontPadding="true"
+                        android:maxLines="1"
+                        android:textSize="20sp"
+                        app:fl_fieldStyle="fl_box" />
+
+                    <com.cengalabs.flatui.views.FlatButton
+                        android:id="@+id/button_driver"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="1"
+                        android:text=">>"
+                        android:textSize="25sp"
+                        app:fl_blockButtonEffectHeight="3dp"
+                        app:fl_textAppearance="fl_light" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <com.cengalabs.flatui.views.FlatEditText
+                        android:id="@+id/editText_vehicle"
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:hint="รหัสรถ"
+                        android:includeFontPadding="true"
+                        android:maxLines="1"
+                        android:textSize="20sp"
+                        app:fl_fieldStyle="fl_box" />
+
+                    <com.cengalabs.flatui.views.FlatButton
+                        android:id="@+id/button_vehicle"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="1"
+                        android:text=">>"
+                        android:textSize="25sp"
+                        app:fl_blockButtonEffectHeight="3dp"
+                        app:fl_textAppearance="fl_light" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <com.cengalabs.flatui.views.FlatButton
+                        android:id="@+id/button_login"
+                        android:layout_width="600dp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:text="@string/Login"
+                        android:textSize="25sp"
+                        app:fl_blockButtonEffectHeight="3dp"
+                        app:fl_textAppearance="fl_light" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

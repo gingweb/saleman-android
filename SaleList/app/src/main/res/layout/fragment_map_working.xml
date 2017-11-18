@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.akkaratanapat.altear.vrp_onboard.Fragment.MapWorkingFragment">
+
+    <FrameLayout
+        android:id="@+id/camera"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <fragment
+        android:id="@+id/map_working"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/buttonForce"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="70dp"
+        android:clickable="true"
+        android:tint="@color/mid_gold"
+        app:backgroundTint="@color/white"
+        app:borderWidth="12dp"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_menu_set_as" />
+
+    <com.cengalabs.flatui.views.FlatButton
+        android:id="@+id/buttonCommand"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="25dp"
+        android:textSize="30sp"
+        app:fl_blockButtonEffectHeight="3dp"
+        app:fl_textAppearance="fl_light" />
+
+
+
+
+</RelativeLayout>

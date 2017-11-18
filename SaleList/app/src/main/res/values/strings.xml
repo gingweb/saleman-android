@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">VRP Limousine</string>
+    <string name="Login_title"> เข้าสู่ระบบด้วยรหัสพนักงาน </string>
+    <string name="Login"> เข้าสู่ระบบ </string>
+    <string name="Login_using_admin_id"> พนักงานจัดรถ  </string>
+    <string name="Login_using_driver_id"> พนักงานขับรถ  </string>
+    <string name="Login_using_vehicle_id"> รถยนต์  </string>
+
+    <string name="admin_id"> รหัสพนักงานจัดรถ </string>
+    <string name="driver_id"> รหัสพนักงานขับรถ  </string>
+    <string name="vehicle_id">  รหัสรถ  </string>
+
+    <string name="logout"> ออกจากระบบ </string>
+    <string name="Logout_using_admin_id"> ออกจากระบบด้วย Admin ID </string>
+
+    <string name="Start"> เริ่มการทำงาน  </string>
+    <string name="Start_car"> ออกรถ  </string>
+    <string name="OK"> ตกลง  </string>
+    <string name="Cancel"> ยกเลิก  </string>
+    <string name="Username"> ชื่อพนักงานขับรถ  </string>
+    <string name="License_plate"> ทะเบียนรถ :  </string>
+    <string name="Brand"> ยี่ห้อรถ  </string>
+    <string name="Source_to_destination"> ต้นทาง - ปลายทาง :  </string>
+    <string name="time"> ระยะเวลาเดินทาง  </string>
+    <string name="date"> เวลา วันที่ </string>
+    <string name="end_job"> จบงาน </string>
+    <string name="pick_passenger"> ผู้โดยสารขึ้นรถ </string>
+    <string name="wait_passenger"> รอรับผู้โดยสาร </string>
+    <string name="go_to_passenger"> ไปยังจุดรับ </string>
+    <string name="job_id"> รหัสงาน : </string>
+    <string name="job_header"> ใบงาน </string>
+    <string name="conclude"> สรุปการเดินทาง </string>
+    <string name="driver_name"> ชื่อพนักงานขับรถ :  </string>
+    <string name="place"> สถานที่ :  </string>
+    <string name="period"> ระยะเวลา :  </string>
+    <string name="time_start"> เวลาเดินทาง </string>
+    <string name="when"> ออกเดินทาง :  </string>
+    <string name="jobID"> ใบงานเลขที่ :  </string>
+    <string name="jobType"> ชนิด :  </string>
+    <string name="timeAppointments"> วันเวลานัดหมาย : </string>
+    <string name="lengthByJob"> ระยะทาง(ตามตั๋ว)  </string>
+    <string name="lengthByDrive"> ระยะทาง </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="dateFormat">yyyy-MM-dd hh:mm:ss</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="intro_message">
+        <![CDATA[
+
+
+            This sample demonstrates the basic use of Camera2 API. Check the source code to see how
+            you can display camera preview and take pictures.
+
+
+        ]]>
+    </string>
+
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+
+</resources>

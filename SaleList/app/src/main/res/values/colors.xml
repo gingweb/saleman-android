@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#867353</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="polyline">#164659</color>
+    <color name="current_location">#72b6f2</color>
+    <color name="radiusBlue">#6072b6f2</color>
+    <color name="red">#d34d42</color>
+    <color name="light_red">#FFCDD2</color>
+    <color name="radiusRed">#60d34a42</color>
+    <color name="green">#14a085</color>
+    <color name="radiusGreen">#6048d9b0</color>
+    <color name="textYellow">#ffd633</color>
+    <color name="radiusYellow">#60ffd633</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="translucent_bg">#88ffffff</color>
+    <color name="main_bg">#ebd9bb</color>
+    <color name="main_dark_bg">#c0a882</color>
+
+    <!--<color name="light_primary_blue">#90CAF9</color>-->
+    <!--<color name="light_secondary_blue">#90CAF9</color>-->
+    <!--<color name="light_blue">#42A5F5</color>-->
+    <!--<color name="mid_blue">#01579B</color>-->
+    <!--<color name="dark_primary_blue">#0D47A1</color>-->
+    <!--<color name="dark_secondary_blue">#192f7a</color>-->
+    <!--<color name="dark_blue">#383863</color>-->
+
+    <color name="light_primary_gold">#eee7dc</color>
+    <color name="light_secondary_gold">#ebd9bb</color>
+    <color name="light_gold">#e3caa4</color>
+    <color name="mid_gold">#c0a882</color>
+    <color name="dark_primary_gold">#a1895d</color>
+    <color name="dark_secondary_gold">#867353</color>
+    <color name="dark_gold">#5f5226</color>
+
+    <color name="snow_darker">#c8c8c8</color>
+    <color name="snow_dark">#dddddd</color>
+    <color name="snow_primary">#e8e8e8</color>
+    <color name="snow_light">#fafafa</color>
+
+    <color name="grass_primary">#2ab081</color>
+    <color name="sand_primary">#fbbf58</color>
+    <color name="candy_primary">#f56773</color>
+
+    <integer-array name="custom_sand">
+        <item>@color/deep_dark</item>
+        <item>@color/sand_dark</item>
+        <item>@color/sand_primary</item>
+        <item>@color/deep_dark</item>
+    </integer-array>
+
+    <integer-array name="custom_gold_dark">
+        <item>@color/white</item>
+        <item>@color/light_gold</item>
+        <item>@color/dark_primary_gold</item>
+        <item>@color/dark_gold</item>
+    </integer-array>
+
+    <integer-array name="custom_gold_light">
+        <item>@color/dark_gold</item>
+        <item>@color/dark_primary_gold</item>
+        <item>@color/light_gold</item>
+        <item>@color/light_primary_gold</item>
+    </integer-array>
+
+</resources>
